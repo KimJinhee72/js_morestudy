@@ -15,90 +15,90 @@
   </head>
   <body>
     <script>
-      //   const name = "철수";
-      //   const age = 30;
-      //   const city = "서울";
+        const name = "철수";
+        const age = 30;
+        const city = "서울";
 
-      //   const message = `안녕하세요 제 이름은 ${name}이고 나이는 ${age}세 입니다.
-      //     저는 ${city}에 살고 있습니다.`;
-      //   console.log(message);
+        const message = `안녕하세요 제 이름은 ${name}이고 나이는 ${age}세 입니다.
+          저는 ${city}에 살고 있습니다.`;
+        console.log(message);
 
-      //   const obj = {
-      //     name: "sucoding",
-      //     printName() {
-      //       console.log(this);
-      //       const inner = () => {
-      //         console.log(this.name);
-      //       };
-      //       inner();
-      //     },
-      //   };
-      //   obj.printName();
-      //   function executeFunction(func) {
-      //     func(); // 전달받은 화살표 함수 실행
-      //   }
-      //   executeFunction(() => {
-      //     console.log("전달받은 값과 동일");
-      //   });
-      //   const num = [1, 2, [3, 4], 5];
-      //   console.log(num[0]);
-      //   console.log(num[1]);
-      //   console.log(num[2][0]);
-      //   console.log(num[3]);
-      //   const [first, second, third, forth] = [1, 2, [3, 4], 5];
-      //   console.log(first);
+        const obj = {
+          name: "sucoding",
+          printName() {
+            console.log(this);
+            const inner = () => {
+              console.log(this.name);
+            };
+            inner();
+          },
+        };
+        obj.printName();
+        function executeFunction(func) {
+          func(); // 전달받은 화살표 함수 실행
+        }
+        executeFunction(() => {
+          console.log("전달받은 값과 동일");
+        });
+        const num = [1, 2, [3, 4], 5];
+        console.log(num[0]);
+        console.log(num[1]);
+        console.log(num[2][0]);
+        console.log(num[3]);
+        const [first, second, third, forth] = [1, 2, [3, 4], 5];
+        console.log(first);
 
-      //   const { name, age, address } = {
-      //     name: "철수",
-      //     age: 30,
-      //     address: {
-      //       city: "서울",
-      //       zipcode: 1335,
-      //     },
-      //   };
-      //   console.log(name);
-      //   console.log(age);
-      //   console.log(address);
+        const { name, age, address } = {
+          name: "철수",
+          age: 30,
+          address: {
+            city: "서울",
+            zipcode: 1335,
+          },
+        };
+        console.log(name);
+        console.log(age);
+        console.log(address);
 
-      //   const arr1 = [1,2,3]
-      //   const arr2 = [4,5,6]
-      //   const concatenate = [...arr1,...arr2]
-      //   console.log(concatenate);
-      //   const arr11 = [1,2,3]
-      //   const arr22 = [...arr11]  //  깊은복사
-      //   arr22[0] = 10
-      //   console.log(arr11);
-      //   console.log(arr22);
-      //   const obj1 = {a:1, b:2};
-      //   const obj2 = {...obj1}   //  깊은복사
-      //   obj2.a = 10
-      //   console.log(obj1);
-      //   console.log(obj2);
+        const arr1 = [1,2,3]
+        const arr2 = [4,5,6]
+        const concatenate = [...arr1,...arr2]
+        console.log(concatenate);
+        const arr11 = [1,2,3]
+        const arr22 = [...arr11]  //  깊은복사
+        arr22[0] = 10
+        console.log(arr11);
+        console.log(arr22);
+        const obj1 = {a:1, b:2};
+        const obj2 = {...obj1}   //  깊은복사
+        obj2.a = 10
+        console.log(obj1);
+        console.log(obj2);
 
-      //   function sum(a,b,c){
-      //     return a+b+c
-      //   }
-      //   const number = [1,2,3]
-      //   const result = sum(...number)
-      //   console.log(result);
+        function sum(a,b,c){
+          return a+b+c
+        }
+        const number = [1,2,3]
+        const result = sum(...number)
+        console.log(result);
 
-      //   const person = {
-      //     firstName:'김',
-      //     lastName:'기수',
-      //     age:30,
-      //     country:'서울'
-      //   }
-      //   const {firstName, lastName, ...details } = person;
-      //   console.log(firstName);
-      //   console.log(lastName);
-      //   console.log(details);
+        const person = {
+          firstName:'김',
+          lastName:'기수',
+          age:30,
+          country:'서울'
+        }
+        const {firstName, lastName, ...details } = person;
+        console.log(firstName);
+        console.log(lastName);
+        console.log(details);
 
-      //   const numbers = [1,2,3,4,5]
-      //   const [first, second, ...num] = numbers
-      //   console.log(first);
-      //   console.log(second);
-      //   console.log(num);
-      //   console.log(first, second, num[0],num[1],num[2]);
+        const numbers = [1,2,3,4,5]
+        const [first1, second1, ...num1] = numbers
+        console.log(first1);
+        console.log(second1);
+        console.log(num1);
+        console.log(first1, second1, num1[0],num1[1],num1[2]);
 
       function sum(...numbers) {
         // reduce((누적값, 현재값))
@@ -117,6 +117,9 @@
       }
       greet("a", "b", "c", "d");
       // 3월27일 공부 완
+
+
+
     </script>
   </body>
 </html>
